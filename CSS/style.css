@@ -142,14 +142,11 @@ footer h2 {
     text-align: center;
 }
 
-.appLogo {
-    cursor: pointer;
-    margin-top: 10px;
-}
-
 .appLogo img {
     height: 40px;
-    width: 120px;
+    width: 125px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .column1 {
