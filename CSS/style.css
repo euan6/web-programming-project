@@ -89,3 +89,7 @@ nav li a:hover {
     border-left: 0.5px #000 solid;
     border-right: 0.5px #000 solid;
 }
+
+.active {
+    background-color: #22bc22;
+}
