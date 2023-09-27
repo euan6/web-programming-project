@@ -164,3 +164,24 @@ footer h2 {
 .column3 {
     flex-basis: 33%;
 }
+
+.column3 ul li {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.in:hover {
+    color: #ae0eee;
+}
+
+.tw:hover {
+    color: #1da1f2;
+}
+
+.yt:hover {
+    color: #ff0000;
+}
+
+.fb:hover {
+    color: #003db8;
+}
