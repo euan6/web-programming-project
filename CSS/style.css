@@ -92,6 +92,8 @@ nav li a:hover {
 
 .active {
     background-color: #22bc22;
+    border-left: 0.5px #000 solid;
+    border-right: 0.5px #000 solid;
 }
 
 /* Main Section properties */
