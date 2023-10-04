@@ -107,14 +107,27 @@ main {
 }
 
 #mainArea {
-    margin: 15px;
+    margin: 10px;
     padding: 20px;
     border-radius: 5px;
-    border: 0.5px #000 solid;
 }
 
 #mainArea h1 {
     font-size: 30px;
+}
+
+#mainArea p {
+    text-align: center;
+}
+
+.productsArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product {
+    
 }
 
 /* Footer Properties */
