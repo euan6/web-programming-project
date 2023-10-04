@@ -123,11 +123,18 @@ main {
 .productsArea {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .product {
-    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    height: 100px;
+    width: 100px;
 }
 
 /* Footer Properties */
