@@ -138,12 +138,16 @@ main {
 }
 
 .product img {
-    height: 200px;
+    height: 150px;
     width: 200px;
 }
 
 .product p {
     margin: 3px 0;
+}
+
+.pName {
+    font-weight: bold;
 }
 
 /* Footer Properties */
