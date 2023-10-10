@@ -130,6 +130,10 @@ main {
     display: flex;
     align-items: center;
     text-align: center;
+    background-color: #bbbbbb;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.5px #000 solid;
 }
 
 .product img {
