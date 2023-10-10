@@ -131,10 +131,11 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #bbbbbb;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     border: 0.5px #000 solid;
+    min-width: 250px;
 }
 
 .product img {
