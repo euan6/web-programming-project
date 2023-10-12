@@ -1,4 +1,4 @@
-function changeLaptopImage() {
+function changeLaptopImage(imageSrc) {
     var image = document.getElementById("laptopImage");
-    image.src = "../Images/laptop2.jpg";
+    image.src = imageSrc;
 }
