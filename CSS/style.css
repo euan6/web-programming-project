@@ -96,7 +96,7 @@ nav li a:hover {
     border-right: 0.5px #000 solid;
 }
 
-/* Main Section properties */
+/* Main Section Properties */
 main {
     padding: 10px;
     height: 100%;
@@ -121,6 +121,7 @@ main {
     text-align: center;
 }
 
+/* Products Page Properties */
 .productsArea {
     display: flex;
     align-items: center;
