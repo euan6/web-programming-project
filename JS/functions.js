@@ -26,18 +26,21 @@ function changeSwatchImage(imageSrc) {
 function showConfirmation(downloadType) {
     var result = window.confirm("Are you sure you want to download on the " + downloadType + " Store?");
     if (result) {
-        alert("Starting download");
+        alert("Starting Download");
     } else {
-        alert("Cancelling download");
+        alert("Cancelling Download");
     }
 }
 
 // checks every link class for the filename and if it is current file, add active class to it
-var currentPageUrl = window.location.href;
-var links = document.querySelectorAll(".link");
-for (var i = 0; i < links.length; i++) {
-    var linkHref = links[i].getAttribute("href");
-    if (currentPageUrl.endsWith(linkHref)) {
-        links[i].classList.add("active");
+function highlightCurrentPage() {
+    var currentPageUrl = window.location.href;
+    var navbarLinks = document.querySelectorAll(".link");
+    for (var i = 0; i < navbarLinks.length; i++) {
+        var link = navbarLinks[i];
+        var linkHref = link.getAttribute("href");
+        if (currentPageUrl.endsWith(linkHref)) {
+            link.classList.add("active");
+        }
     }
 }
