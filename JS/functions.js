@@ -31,3 +31,11 @@ function showConfirmation(downloadType) {
         alert("Cancelling download");
     }
 }
+
+// checks every link class for the filename and if it is current file, add active class to it
+var links = document.querySelectorAll("a");
+for (var i = 0; i < links.length; i++) {
+    if (links[i].getAttribute("href") === window.location.pathname) {
+        links[i].classList.add("active");
+    }
+}

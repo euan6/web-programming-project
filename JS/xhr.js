@@ -23,3 +23,16 @@ window.addEventListener('DOMContentLoaded', function() {
     };
     xhr.send();
 });
+
+// dynamically loads the navbar using xhr
+window.addEventListener('DOMContentLoaded', function() {
+    var navbarPlaceholder = document.getElementById("navbarPlaceholder");
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "navbar.html", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            navbarPlaceholder.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+});
