@@ -21,3 +21,13 @@ function changeSwatchImage(imageSrc) {
     var image = document.getElementById("swatchImage");
     image.src = imageSrc;
 }
+
+// creates a pop up box when one of the app store images is clicked
+function showConfirmation() {
+    var result = window.confirm("Are you sure you want to continue?");
+    if (result) {
+        alert("You clicked yes");
+    } else {
+        alert("You clicked no");
+    }
+}
