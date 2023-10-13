@@ -35,3 +35,9 @@ function showConfirmation(downloadType) {
 // checks every link class for the filename and if it is current file, add active class to it
 var currentPageUrl = window.location.href;
 var links = document.querySelectorAll(".link");
+for (var i = 0; i < links.length; i++) {
+    var linkHref = links[i].getAttribute("href");
+    if (currentPageUrl.endsWith(linkHref)) {
+        links[i].classList.add("active");
+    }
+}
