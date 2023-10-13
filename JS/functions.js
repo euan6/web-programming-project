@@ -23,11 +23,11 @@ function changeSwatchImage(imageSrc) {
 }
 
 // creates a pop up box when one of the app store images is clicked
-function showConfirmation() {
-    var result = window.confirm("Are you sure you want to continue?");
+function showConfirmation(downloadType) {
+    var result = window.confirm("Are you sure you want to download on the " + downloadType + " Store?");
     if (result) {
-        alert("You clicked yes");
+        alert("Starting download");
     } else {
-        alert("You clicked no");
+        alert("Cancelling download");
     }
 }
