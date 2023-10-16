@@ -177,6 +177,35 @@ main {
     color: #24f324;
 }
 
+/* Form Properties */
+.formGroup {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"], input[type="password"] {
+    width: 50%;
+    padding: 5px;
+    border: 0.5px #000 solid;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #11c6fd;
+    cursor: pointer;
+    width: 20%;
+    border: 0.5px #000 solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #87f7ff;
+}
+
 /* Footer Properties */
 footer {
     margin: 10px 0;
