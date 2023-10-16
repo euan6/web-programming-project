@@ -148,14 +148,14 @@ main {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
-    border: 0.5px #000 solid;
+    border: 1px #000 solid;
     min-width: 250px;
     height: 300px;
     overflow: hidden;
 }
 
 .product:hover {
-    border: 0.5px #009dff solid;
+    border: 1px #009dff solid;
 }
 
 .product img {

@@ -14,17 +14,17 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
 
     // create the product name, add class 'pName' and content
     var p1 = document.createElement("p");
-    p1.classList.add("pName");
+    p1.className = "pName";
     p1.textContent = name;
 
     // create the product price, add class 'pPrice' and content
     var p2 = document.createElement("p");
-    p1.classList.add("pPrice");
-    p1.textContent = price;
+    p2.className = "pPrice";
+    p2.textContent = price;
 
     // create the product description and add content
     var p3 = document.createElement("p");
-    p1.textContent = description;
+    p3.textContent = description;
 
     // append elements on to the div
     div.appendChild(img);
