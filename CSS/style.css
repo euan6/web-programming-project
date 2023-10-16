@@ -8,7 +8,9 @@ html {
     min-height: 100%;
     background: linear-gradient( 45deg,
         #24f324,
-        #dfdd42
+        #24f38b,
+        #1df2e7,
+        #1da1f2
     );
 }
 
@@ -84,14 +86,14 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #24f324;
+    background-color: #87f7ff;
     color: #000;
     border-left: 0.5px #000 solid;
     border-right: 0.5px #000 solid;
 }
 
 .active {
-    background-color: #22bc22;
+    background-color: #11c6fd;
     border-left: 0.5px #000 solid;
     border-right: 0.5px #000 solid;
 }
@@ -150,6 +152,10 @@ main {
     min-width: 250px;
     height: 300px;
     overflow: hidden;
+}
+
+.product:hover {
+    border: 0.5px #009dff solid;
 }
 
 .product img {
