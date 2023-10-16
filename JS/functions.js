@@ -45,42 +45,16 @@ function highlightCurrentPage() {
     }
 }
 
-// creates a dynamically loading div with class 'product'
-function productDiv(imageSrc, name, price, description) {
-    // create the div and add class 'product'
-    var div = document.createElement("div");
-    div.classList.add("product");
+window.addEventListener("load", function() {
+    productDiv("../Images/laptop.jpg", "laptopImage", "changeLaptopImage('../Images/laptop2.jpg')", 
+    "changeLaptopImage('../Images/laptop.jpg')", "Laptop", "£799", "Description for laptop product");
 
-    // create image and add src and alt text
-    var img = document.createElement("img");
-    img.src = imageSrc;
-    img.alt = "Product Image";
+    productDiv("../Images/watch.jpg",  "watchImage", "changeWatchImage('../Images/watch2.jpg')",
+    "changeWatchImage('../Images/watch.jpg')", "Watch", "£150", "Description for watch product");
 
-    // create the product name, add class 'pName' and content
-    var p1 = document.createElement("p");
-    p1.classList.add("pName");
-    p1.textContent = name;
+    productDiv("../Images/keyboard.jpg", "keyboardImage", "changeKeyboardImage('../Images/keyboard2.jpg')", 
+    "changeKeyboardImage('../Images/keyboard.jpg')", "Keyboard", "£65", "Description for keyboard product");
 
-    // create the product price, add class 'pPrice' and content
-    var p2 = document.createElement("p");
-    p1.classList.add("pPrice");
-    p1.textContent = price;
-
-    // create the product description and add content
-    var p3 = document.createElement("p");
-    p1.textContent = description;
-
-    // append elements on to the div
-    div.appendChild(img);
-    div.appendChild(p1);
-    div.appendChild(p2);
-    div.appendChild(p3);
-
-    // add the div to the 'productsArea' class
-    var targetElement = document.querySelector(".productsArea");
-    if (targetElement) {
-        targetElement.appendChild(div);
-    } else {
-        alert("Target element not found");
-    }
-}
+    productDiv("../Images/swatch.jpg", "swatchImage", "changeSwatchImage('../Images/swatch2.jpg')", 
+    "changeSwatchImage('../Images/swatch.jpg')", "Smart Watch", "£499", "Description for smart watch product");
+});
