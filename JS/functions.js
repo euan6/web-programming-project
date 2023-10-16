@@ -49,20 +49,24 @@ window.addEventListener("load", function() {
     productDiv("../Images/laptop.jpg", "laptopImage",
     function() { changeLaptopImage('../Images/laptop2.jpg') }, 
     function() { changeLaptopImage('../Images/laptop.jpg') }, 
-    "Laptop", "£799", "Description for laptop product");
+    "Laptop", "£799", 
+    "Description for laptop product");
 
     productDiv("../Images/watch.jpg",  "watchImage", 
     function() { changeWatchImage('../Images/watch2.jpg') },
     function() { changeWatchImage('../Images/watch.jpg') }, 
-    "Watch", "£150", "Description for watch product");
+    "Watch", "£150", 
+    "Description for watch product");
 
     productDiv("../Images/keyboard.jpg", "keyboardImage", 
     function() { changeKeyboardImage('../Images/keyboard2.jpg') }, 
     function() { changeKeyboardImage('../Images/keyboard.jpg') }, 
-    "Keyboard", "£65", "Description for keyboard product");
+    "Keyboard", "£65", 
+    "Description for keyboard product");
 
     productDiv("../Images/swatch.jpg", "swatchImage", 
     function() { changeSwatchImage('../Images/swatch2.jpg') } , 
     function() { changeSwatchImage('../Images/swatch.jpg') }, 
-    "Smart Watch", "£499", "Description for smart watch product");
+    "Smart Watch", "£499", 
+    "Description for smart watch product");
 });
