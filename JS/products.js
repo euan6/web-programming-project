@@ -13,17 +13,18 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
     img.onmouseout = imageOut;
 
     // create the product name, add class 'pName' and content
-    var p1 = document.createElement("p");
+    var p1 = document.createElement("h2");
     p1.className = "pName";
     p1.textContent = name;
 
     // create the product price, add class 'pPrice' and content
-    var p2 = document.createElement("p");
+    var p2 = document.createElement("h3");
     p2.className = "pPrice";
     p2.textContent = price;
 
     // create the product description and add content
-    var p3 = document.createElement("p");
+    var p3 = document.createElement("h4");
+    p3.className = "pDescription";
     p3.textContent = description;
 
     // append elements on to the div
@@ -43,23 +44,52 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
 
 // adds different product divs when the page is loaded
 window.addEventListener("load", function() {
+    // adds laptop product
     productDiv("../Images/laptop.jpg", "laptopImage",
     function() { changeLaptopImage('../Images/laptop2.jpg') }, 
     function() { changeLaptopImage('../Images/laptop.jpg') }, 
     "Laptop", "£799", 
     "Description for laptop product");
 
+    // adds watch product
     productDiv("../Images/watch.jpg",  "watchImage", 
     function() { changeWatchImage('../Images/watch2.jpg') },
     function() { changeWatchImage('../Images/watch.jpg') }, 
     "Watch", "£150", 
     "Description for watch product");
 
+    // adds keyboard product
     productDiv("../Images/keyboard.jpg", "keyboardImage", 
     function() { changeKeyboardImage('../Images/keyboard2.jpg') }, 
     function() { changeKeyboardImage('../Images/keyboard.jpg') }, 
     "Keyboard", "£65", 
     "Description for keyboard product");
+
+    // adds smart watch product
+    productDiv("../Images/swatch.jpg", "swatchImage", 
+    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
+    function() { changeSwatchImage('../Images/swatch.jpg') }, 
+    "Smart Watch", "£499", 
+    "Description for smart watch product");
+
+    // adds .. product
+    productDiv("../Images/swatch.jpg", "swatchImage", 
+    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
+    function() { changeSwatchImage('../Images/swatch.jpg') }, 
+    "Smart Watch", "£499", 
+    "Description for smart watch product");
+
+    productDiv("../Images/swatch.jpg", "swatchImage", 
+    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
+    function() { changeSwatchImage('../Images/swatch.jpg') }, 
+    "Smart Watch", "£499", 
+    "Description for smart watch product");
+
+    productDiv("../Images/swatch.jpg", "swatchImage", 
+    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
+    function() { changeSwatchImage('../Images/swatch.jpg') }, 
+    "Smart Watch", "£499", 
+    "Description for smart watch product");
 
     productDiv("../Images/swatch.jpg", "swatchImage", 
     function() { changeSwatchImage('../Images/swatch2.jpg') } , 
