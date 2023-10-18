@@ -18,10 +18,10 @@
     <main> <!-- main area of home page -->
         <div id="mainArea">
             <h1>Sign up Page</h1>
-            <p>This is my sign up page for my website.</p>
+            <p>This is the sign up page for my website.</p>
             <p>Please create a username and password in the fields below.</p>
 
-                <form action="">
+                <form id="signupForm" onsubmit="return checkSignupData()">
                     <div class="formGroup">
                         <input type="text" id="username" placeholder="Username" required>
                     </div>

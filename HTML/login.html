@@ -18,10 +18,10 @@
     <main> <!-- main area of home page -->
         <div id="mainArea">
             <h1>Login Page</h1>
-            <p>This is my login page for my website.</p>
+            <p>This is the login page for my website.</p>
             <p>Please enter your username and password in the fields below.</p>
 
-                <form action="">
+                <form id="loginForm" onsubmit="return checkLoginData()">
                     <div class="formGroup">
                         <input type="text" id="username" placeholder="Username" required>
                     </div>
