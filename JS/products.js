@@ -46,54 +46,54 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
 window.addEventListener("load", function() {
     // adds laptop product
     productDiv("../Images/laptop.jpg", "laptopImage",
-    function() { changeLaptopImage('../Images/laptop2.jpg') }, 
-    function() { changeLaptopImage('../Images/laptop.jpg') }, 
+    function() { changeImage('../Images/laptop2.jpg', "laptopImage") }, 
+    function() { changeImage('../Images/laptop.jpg', "laptopImage") }, 
     "Laptop", "£799", 
     "Description for laptop product");
 
     // adds watch product
     productDiv("../Images/watch.jpg",  "watchImage", 
-    function() { changeWatchImage('../Images/watch2.jpg') },
-    function() { changeWatchImage('../Images/watch.jpg') }, 
+    function() { changeImage('../Images/watch2.jpg', "watchImage") },
+    function() { changeImage('../Images/watch.jpg', "watchImage") }, 
     "Watch", "£150", 
     "Description for watch product");
 
     // adds keyboard product
     productDiv("../Images/keyboard.jpg", "keyboardImage", 
-    function() { changeKeyboardImage('../Images/keyboard2.jpg') }, 
-    function() { changeKeyboardImage('../Images/keyboard.jpg') }, 
+    function() { changeImage('../Images/keyboard2.jpg', "keyboardImage") }, 
+    function() { changeImage('../Images/keyboard.jpg', "keyboardImage") }, 
     "Keyboard", "£65", 
     "Description for keyboard product");
 
     // adds smart watch product
     productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
-    function() { changeSwatchImage('../Images/swatch.jpg') }, 
+    function() { changeImage('../Images/swatch2.jpg', "swatchImage") } , 
+    function() { changeImage('../Images/swatch.jpg', "swatchImage") }, 
     "Smart Watch", "£499", 
     "Description for smart watch product");
 
-    // adds .. product
-    productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
-    function() { changeSwatchImage('../Images/swatch.jpg') }, 
-    "Smart Watch", "£499", 
-    "Description for smart watch product");
+    // adds mouse product
+    productDiv("../Images/mouse.jpg", "mouseImage", 
+    function() { changeImage('../Images/mouse2.jpg', "mouseImage") } , 
+    function() { changeImage('../Images/mouse.jpg', "mouseImage") }, 
+    "RGB Mouse", "£29", 
+    "Description mouse product");
 
-    productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
-    function() { changeSwatchImage('../Images/swatch.jpg') }, 
-    "Smart Watch", "£499", 
-    "Description for smart watch product");
+    productDiv("../Images/speaker.jpg", "speakerImage", 
+    function() { changeImage('../Images/speaker2.jpg',"speakerImage") } , 
+    function() { changeImage('../Images/speaker.jpg', "speakerImage") }, 
+    "Logitech Speaker", "£199", 
+    "Description for logitech speaker product");
 
-    productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
-    function() { changeSwatchImage('../Images/swatch.jpg') }, 
-    "Smart Watch", "£499", 
-    "Description for smart watch product");
+    productDiv("../Images/headphones.jpg", "headphonesImage", 
+    function() { changeImage('../Images/headphones2.jpg', "headphonesImage") } , 
+    function() { changeImage('../Images/headphones.jpg', "headphonesImage") }, 
+    "Headphones", "£139", 
+    "Description for headphones product");
 
-    productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeSwatchImage('../Images/swatch2.jpg') } , 
-    function() { changeSwatchImage('../Images/swatch.jpg') }, 
-    "Smart Watch", "£499", 
-    "Description for smart watch product");
+    productDiv("../Images/remote.jpg", "remoteImage", 
+    function() { changeImage('../Images/remote2.jpg', "remoteImage") } , 
+    function() { changeImage('../Images/remote.jpg', "remoteImage") }, 
+    "TV Remote", "£20", 
+    "Description for tv remote product");
 });
