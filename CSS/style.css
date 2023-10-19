@@ -137,6 +137,7 @@ main p {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
 .product {

@@ -79,18 +79,21 @@ window.addEventListener("load", function() {
     "RGB Mouse", "£29", 
     "Description mouse product");
 
+    // adds speaker product
     productDiv("../Images/speaker.jpg", "speakerImage", 
     function() { changeImage('../Images/speaker2.jpg',"speakerImage") } , 
     function() { changeImage('../Images/speaker.jpg', "speakerImage") }, 
     "Logitech Speaker", "£199", 
     "Description for logitech speaker product");
 
+    // adds headphones product
     productDiv("../Images/headphones.jpg", "headphonesImage", 
     function() { changeImage('../Images/headphones2.jpg', "headphonesImage") } , 
     function() { changeImage('../Images/headphones.jpg', "headphonesImage") }, 
     "Headphones", "£139", 
     "Description for headphones product");
 
+    // adds remote product
     productDiv("../Images/remote.jpg", "remoteImage", 
     function() { changeImage('../Images/remote2.jpg', "remoteImage") } , 
     function() { changeImage('../Images/remote.jpg', "remoteImage") }, 
