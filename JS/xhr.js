@@ -34,6 +34,10 @@ window.addEventListener('DOMContentLoaded', function() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             footerPlaceholder.innerHTML = xhr.responseText;
+            // Update the clock every second (1000 milliseconds)
+            setInterval(updateClock, 1000);
+            // Initialize the clock immediately
+            updateClock();
         }
     };
     xhr.send();
