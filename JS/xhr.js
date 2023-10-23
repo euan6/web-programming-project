@@ -36,8 +36,10 @@ window.addEventListener('DOMContentLoaded', function() {
             footerPlaceholder.innerHTML = xhr.responseText;
             // update the clock every second (1000 milliseconds)
             setInterval(updateClock, 1000);
-            // initialize the clock immediately
+            // initialise the clock
             updateClock();
+            // initialise the day
+            updateDay();
         }
     };
     xhr.send();

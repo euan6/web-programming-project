@@ -36,3 +36,37 @@ function updateClock() {
     const timeString = `${hours}:${minutes}:${seconds}`;
     document.getElementById("time").textContent = timeString;
 }
+
+//
+function updateDay() {
+    const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const currentDate = new Date();
+    const dayOfWeek = daysOfWeek[currentDate.getDay()];
+    const dayOfMonth = currentDate.getDate();
+    const month = months[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
+    const formattedDate = `Today is ${dayOfWeek} the ${dayOfMonth}${getDaySuffix(dayOfMonth)} of ${month} ${year}`;
+
+    const currentDayElement = document.getElementById("currentDay");
+    if (currentDayElement) {
+        currentDayElement.textContent = formattedDate;
+    }
+}
+
+//
+function getDaySuffix(day) {
+    if (day >= 11 && day <= 13) {
+        return "th";
+    }
+    switch (day % 10) {
+        case 1:
+            return "st";
+        case 2:
+            return "nd";
+        case 3:
+            return "rd";
+        default:
+            return "th";
+    }
+}
