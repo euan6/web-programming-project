@@ -37,7 +37,7 @@ function updateClock() {
     document.getElementById("time").textContent = timeString;
 }
 
-//
+// creates a format of the current day, month and year
 function updateDay() {
     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -54,7 +54,7 @@ function updateDay() {
     }
 }
 
-//
+// calculates the suffix for the current day
 function getDaySuffix(day) {
     if (day >= 11 && day <= 13) {
         return "th";
