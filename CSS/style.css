@@ -272,9 +272,9 @@ footer h2 {
     flex-basis: 40%;
 }
 
-.column3 ul li {
-    cursor: pointer;
+.column3 ul li:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .in:hover {
