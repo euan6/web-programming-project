@@ -1,4 +1,46 @@
-/* Media query for less than 900px */
-@media screen and (max-width:900px) {
-        
+/* Media query for less than 1200px */
+@media screen and (max-width:1200px) {
+
+    /* Header Properties */
+    h1 {
+        font-size: 30px;
+    }
+
+    /* Nav Bar Properties */
+    nav li a {
+        width: 85px;
+        font-size: 14px;
+    }
+
+    /* Main Section Properties */
+    #mainArea h1 {
+        font-size: 28px;
+    }
+
+    #mainArea p {
+        font-size: 16px;
+    }
+
+    /* Footer Properties */
+    footer h2 {
+        font-size: 16px;
+    }
+
+    #time {
+        font-size: 16px;
+    }
+
+    footer ul {
+        font-size: 11px;
+    }
+
+    .appLogo img {
+        height: 35px;
+        width: 100px;
+    }
+
+    .column1 {
+        text-wrap: pretty;
+    }
+
 }
