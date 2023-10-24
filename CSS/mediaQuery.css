@@ -21,6 +21,25 @@
         font-size: 16px;
     }
 
+    /* Products Page Properties */
+    .product {
+        width: 95%;
+        height: 95%;
+    }
+
+    .product img {
+        height: 120px;
+        width: 160px;
+    }
+
+    .pName {
+        font-size: 16px;
+    }
+
+    .pPrice {
+        font-size: 15px;
+    }
+
     /* Footer Properties */
     footer h2 {
         font-size: 16px;
