@@ -61,5 +61,67 @@
     .column1 {
         text-wrap: pretty;
     }
-
 }
+
+/* Media query for less than 900px */
+@media screen and (max-width:900px) {
+
+    /* Header Properties */
+    h1 {
+        font-size: 28px;
+    }
+
+    /* Nav Bar Properties */
+    nav li a {
+        width: 65px;
+        font-size: 13px;
+    }
+
+    /* Main Section Properties */
+    #mainArea h1 {
+        font-size: 22px;
+    }
+
+    #mainArea p {
+        font-size: 14px;
+    }
+
+    /* Products Page Properties */
+    .product {
+        width: 90%;
+        height: 90%;
+    }
+
+    .product img {
+        height: 100px;
+        width: 130px;
+    }
+
+    .pName {
+        font-size: 16px;
+    }
+
+    .pPrice {
+        font-size: 15px;
+    }
+
+    /* Footer Properties */
+    footer h2 {
+        font-size: 14px;
+    }
+
+    #time {
+        font-size: 14px;
+    }
+
+    footer ul {
+        font-size: 10px;
+    }
+
+    .appLogo img {
+        height: 30px;
+        width: 80px;
+    }
+}
+
+/* Media query for less than 750px */
