@@ -137,4 +137,50 @@
         width: 45px;
         font-size: 11px;
     }
+
+    /* Main Section Properties */
+    #mainArea h1 {
+        font-size: 20px;
+    }
+
+    #mainArea p {
+        font-size: 13px;
+    }
+
+    /* Products Page Properties */
+    .product {
+        width: 95%;
+        height: 95%;
+    }
+
+    .product img {
+        height: 100px;
+        width: 130px;
+    }
+
+    .pName {
+        font-size: 16px;
+    }
+
+    .pPrice {
+        font-size: 15px;
+    }
+
+    /* Footer Properties */
+    footer h2 {
+        font-size: 14px;
+    }
+
+    #time {
+        font-size: 14px;
+    }
+
+    footer ul {
+        font-size: 10px;
+    }
+
+    .appLogo img {
+        height: 30px;
+        width: 80px;
+    }
 }
