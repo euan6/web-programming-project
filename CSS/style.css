@@ -119,7 +119,7 @@ main {
     font-size: 35px;
 }
 
-main p {
+#mainArea p {
     text-align: center;
     font-size: 18px;
 }
@@ -222,6 +222,17 @@ input[type="submit"]:hover {
 }
 
 /* About Page Properties */
+.history {
+    padding: 10px;
+    border: 0.5px #000 dashed;
+    border-radius: 5px;
+    max-height: 100px;
+    overflow: scroll;
+}
+
+#mainArea .history p {
+    text-align: left;
+}
 
 /* Footer Properties */
 footer {
