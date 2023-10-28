@@ -42,10 +42,16 @@ function reviewSlider(imageSrc, name, productName, rating, description) {
     div.appendChild(p4);
 
     // add the div to the 'reviewSlider' id
-    var targetElement = document.querySelector("#reviewSlider");
+    var targetElement = document.querySelector("#reviewArea");
     if (targetElement) {
         targetElement.appendChild(div);
     } else {
         alert("Target element not found");
     }
 }
+
+// adds different reviews when the page is loaded
+window.addEventListener("load", function() {
+    // adds first review
+    reviewSlider("../Images/profile.jpg", "John Doe", "RGB Mouse", "4/5", "The mouse was decent, but ... and thats why.") 
+});

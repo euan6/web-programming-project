@@ -278,6 +278,10 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+#reviewArea {
+    width: 100%;
+}
+
 .review {
     padding: 0 50px;
 }
