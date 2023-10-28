@@ -33,7 +33,7 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
     div.appendChild(p2);
     div.appendChild(p3);
 
-    // add the div to the 'productsArea' class
+    // add the div to the 'productsArea' id
     var targetElement = document.querySelector("#productsArea");
     if (targetElement) {
         targetElement.appendChild(div);
