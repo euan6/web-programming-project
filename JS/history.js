@@ -4,6 +4,7 @@ function historyInfo(description) {
     var p = document.createElement("p");
     p.textContent = description;
 
+    // adds the p to the 'history' class
     var targetElement = document.querySelector(".history");
     if (targetElement) {
         targetElement.appendChild(p)
@@ -12,7 +13,7 @@ function historyInfo(description) {
     }
 }
 
-//adds the p to the 'history class
+// adds the p to the 'history class
 window.addEventListener("load", function() {
     // adds p element for week 1
     historyInfo("Week 1 - Basic HTML, CSS and Javascript files were created and uploaded to GitHub");
