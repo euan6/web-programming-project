@@ -34,4 +34,19 @@ window.addEventListener("load", function() {
 
     // adds p element for week 7
     historyInfo("Week 7 - Media queries added to make more responsive and this page + reviews page created");
+
+    // adds p element for week 8
+    historyInfo("Week 8 - ");
+
+    // adds p element for week 9
+    historyInfo("Week 9 - ");
+
+    // adds p element for week 10
+    historyInfo("Week 10 - ");
+
+    // adds p element for week 11
+    historyInfo("Week 11 - ");
+
+    // adds p element for week 12
+    historyInfo("Week 12 - ");
 });
