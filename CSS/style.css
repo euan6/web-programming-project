@@ -236,7 +236,7 @@ input[type="submit"]:hover {
 /* About Page Properties */
 .history {
     padding: 10px;
-    border: 0.5px #000 dashed;
+    border: 0.5px #000 solid;
     border-radius: 5px;
     max-height: 170px;
     overflow: auto;
@@ -244,15 +244,21 @@ input[type="submit"]:hover {
 }
 
 .history::-webkit-scrollbar {
-    width: 0;
+    width: 10px;
 }
 
 .history::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: #979797;
+    border-left: 0.5px #000 solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .history::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: #dfdfdf;
+    border-left: 0.5px #000 solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #mainArea .history p {
