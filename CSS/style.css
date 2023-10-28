@@ -234,7 +234,7 @@ input[type="submit"]:hover {
 }
 
 /* About Page Properties */
-.history {
+#history {
     padding: 10px;
     border: 0.5px #000 solid;
     border-radius: 5px;
@@ -243,27 +243,37 @@ input[type="submit"]:hover {
     overflow-x: hidden;
 }
 
-.history::-webkit-scrollbar {
+#history::-webkit-scrollbar {
     width: 10px;
 }
 
-.history::-webkit-scrollbar-thumb {
+#history::-webkit-scrollbar-thumb {
     background-color: #979797;
     border-left: 0.5px #000 solid;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.history::-webkit-scrollbar-track {
+#history::-webkit-scrollbar-track {
     background-color: #dfdfdf;
     border-left: 0.5px #000 solid;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-#mainArea .history p {
+#mainArea #history p {
     margin-top: -5px;
     text-align: left;
+}
+
+/* Review Page Properties */
+#reviewSlider {
+    padding: 10px;
+    border: 0.5px #000 solid;
+    border-radius: 5px;
+    max-height: 170px;
+    overflow: auto;
+    overflow-x: hidden;
 }
 
 /* Footer Properties */

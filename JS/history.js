@@ -5,7 +5,7 @@ function historyInfo(description) {
     p.textContent = description;
 
     // adds the p to the 'history' class
-    var targetElement = document.querySelector(".history");
+    var targetElement = document.querySelector("#history");
     if (targetElement) {
         targetElement.appendChild(p)
     } else {
