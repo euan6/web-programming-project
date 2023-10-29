@@ -278,6 +278,10 @@ input[type="submit"]:hover {
     align-items: center;
 }
 
+#reviewSlider p {
+    text-align: left;
+}
+
 #reviewArea {
     width: 100%;
 }
@@ -315,11 +319,12 @@ button {
 }
 
 .rating {
+    padding-left: 10px;
     color: #24f324;
 }
 
-#reviewSlider p {
-    text-align: left;
+.reviewText {
+    padding-left: 10px;
 }
 
 /* Footer Properties */
