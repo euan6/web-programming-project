@@ -416,6 +416,15 @@ footer ul {
     height: 15px;
 }
 
+#cookieBanner a {
+    text-decoration: none;
+    color: #1da1f2;
+}
+
+#cookieBanner a:hover {
+    text-decoration: underline;
+}
+
 #closeBanner {
     position: absolute;
     right: 10px;
