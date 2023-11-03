@@ -400,3 +400,24 @@ footer ul {
 .fb:hover {
     color: #003db8;
 }
+
+/* Cookie Banner Properties */
+#cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.5px #000 solid;
+    height: 15px;
+}
+
+#closeBanner {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
