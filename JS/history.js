@@ -37,7 +37,7 @@ window.addEventListener("load", function() {
     historyInfo("Week 7 - Media queries added to make more responsive and this page + reviews page created");
 
     // adds p element for week 8
-    historyInfo("Week 8 - ");
+    historyInfo("Week 8 - Cookie Banner fiex to the bottom of website with link, done using jQuery");
 
     // adds p element for week 9
     historyInfo("Week 9 - ");
