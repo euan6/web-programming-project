@@ -109,11 +109,17 @@ nav li a {
 }
 
 nav li a:hover {
-    text-decoration: underline;
+    font-weight: bold;
 }
 
-.active {
-    font-weight: bold;
+.active::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: auto;
 }
 
 /* Main Section Properties */
