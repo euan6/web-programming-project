@@ -4,7 +4,6 @@
     /* Header Properties */
     h1 {
         font-size: 20px;
-        text-wrap: pretty;
     }
 
     /* Nav Bar Properties */
@@ -69,13 +68,14 @@
 
     /* Header Properties */
     h1 {
-        font-size: 28px;
+        font-size: 15px;
     }
 
     /* Nav Bar Properties */
     nav li a {
-        width: 65px;
-        font-size: 13px;
+        width: 40px;
+        font-size: 12px;
+        padding: 10px 14px;
     }
 
     /* Main Section Properties */

@@ -37,6 +37,7 @@ h1 {
     font-size: 35px;
     color: #000;
     font-weight: bold;
+    text-wrap: pretty;
 }
 
 p {
