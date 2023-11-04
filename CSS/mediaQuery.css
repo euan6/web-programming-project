@@ -3,12 +3,13 @@
 
     /* Header Properties */
     h1 {
-        font-size: 30px;
+        font-size: 20px;
+        text-wrap: pretty;
     }
 
     /* Nav Bar Properties */
     nav li a {
-        width: 85px;
+        width: 55px;
         font-size: 14px;
     }
 
