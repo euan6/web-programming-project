@@ -69,11 +69,10 @@ header {
     border-bottom: 0.5px #000 solid;
     border-left: 0.5px #000 solid;
     border-right: 0.5px #000 solid;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     box-sizing: border-box;
-    width: 80%;
     top: 0;
+    left: 0;
+    right: 0;
     position: fixed;
 }
 
