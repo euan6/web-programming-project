@@ -34,10 +34,10 @@ window.addEventListener("load", function() {
     historyInfo("Week 6 - Forms created for signup and login pages and clock added inside footer");
 
     // adds p element for week 7
-    historyInfo("Week 7 - Media queries added to make more responsive and this page + reviews page created");
+    historyInfo("Week 7 - Media queries added to make more responsive and this page and reviews page created");
 
     // adds p element for week 8
-    historyInfo("Week 8 - Cookie Banner fiex to the bottom of website with link, done using jQuery");
+    historyInfo("Week 8 - Cookie Banner fixed to the bottom of website using jQuery aswell as the navbar and header merged");
 
     // adds p element for week 9
     historyInfo("Week 9 - ");

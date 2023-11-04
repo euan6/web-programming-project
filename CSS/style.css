@@ -414,6 +414,10 @@ footer ul {
     color: #003db8;
 }
 
+.sc:hover {
+    color: #ddda41;
+}
+
 /* Cookie Banner Properties */
 #cookieBanner {
     position: fixed;
