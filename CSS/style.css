@@ -34,7 +34,7 @@ body {
 /* Text Properties */
 h1 {
     text-align: center;
-    font-size: 35px;
+    font-size: 32px;
     color: #000;
     font-weight: bold;
     text-wrap: pretty;
@@ -101,7 +101,7 @@ nav li {
 nav li a {
     display: block;
     color: #000;
-    font-size: 18px;
+    font-size: 20px;
     padding: 14px 16px;
     text-decoration: none;
     height: 100%;
