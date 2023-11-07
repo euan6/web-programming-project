@@ -99,4 +99,11 @@ window.addEventListener("load", function() {
     function() { changeImage('../Images/headphones.jpg', "headphonesImage") }, 
     "Headphones", "£139", 
     "Dr. Dre beats in white with bluetooth capabilities");
+
+    // adds phone holder product
+    productDiv("../Images/holder.jpg", "holderImage", 
+    function() { changeImage('../Images/holder2.jpg', "holderImage") } , 
+    function() { changeImage('../Images/holder.jpg', "holderImage") }, 
+    "Phone Holder", "£12", 
+    "iPhone 13 metallic phone holder with chargeing capabilities");
 });
