@@ -114,3 +114,16 @@ window.addEventListener("load", function() {
     "LG Monitor", "£500", 
     "26.5 inch LG monitor with 4K quality and 144Hz refresh rate");
 });
+
+// product data for individual products
+const prodcuts = [
+    {
+        num: 1,
+        name: "Product1",
+        price: "£",
+        description: "Description",
+        id: "#",
+        imageUrl1: "product.jpg",
+        imageUrl2: "product2.jpg"
+    }
+];
