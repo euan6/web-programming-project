@@ -119,11 +119,92 @@ window.addEventListener("load", function() {
 const prodcuts = [
     {
         num: 1,
-        name: "Product1",
-        price: "£",
-        description: "Description",
-        id: "#",
-        imageUrl1: "product.jpg",
-        imageUrl2: "product2.jpg"
-    }
+        name: "Laptop",
+        price: "£799",
+        description: "Lenovo Thinkpad E15 with an intel i5 core processor. 32GB RAM and a 256GB SSD",
+        id: "laptopImage",
+        imageUrl1: "laptop.jpg",
+        imageUrl2: "laptop2.jpg"
+    },
+    {
+        num: 2,
+        name: "Watch",
+        price: "£150",
+        description: "Hugo Boss stainless steel watch with smooth leather wrist strap",
+        id: "watchImage",
+        imageUrl1: "watch.jpg",
+        imageUrl2: "watch2.jpg"
+    },
+    {
+        num: 3,
+        name: "Keyboard",
+        price: "£65",
+        description: "Logitech RGB light up mechanical keyboard with programmable keys",
+        id: "keyboardImage",
+        imageUrl1: "keyboard.jpg",
+        imageUrl2: "keyboard2.jpg"
+    },
+    {
+        num: 4,
+        name: "Smart Watch",
+        price: "£499",
+        description: "New Apple smart watch with touch screen and built in face ID",
+        id: "swatchImage",
+        imageUrl1: "swatch.jpg",
+        imageUrl2: "swatch2.jpg"
+    },
+    {
+        num: 5,
+        name: "RGB Mouse",
+        price: "£29",
+        description: "Ergonomic mouse built to fit the hand with RGB light up edge",
+        id: "mouseImage",
+        imageUrl1: "mouse.jpg",
+        imageUrl2: "mouse2.jpg"
+    },
+    {
+        num: 6,
+        name: "Logitech Speaker",
+        price: "£199",
+        description: "100W Logitech speakers with bluetooth capabilities",
+        id: "speakerImage",
+        imageUrl1: "speaker.jpg",
+        imageUrl2: "speaker2.jpg"
+    },
+    {
+        num: 7,
+        name: "TV Remote",
+        price: "£20",
+        description: "Standard TV remote for any high end smart box",
+        id: "remoteImage",
+        imageUrl1: "remote.jpg",
+        imageUrl2: "remote2.jpg"
+    },
+    {
+        num: 8,
+        name: "Headphones",
+        price: "£139",
+        description: "Dr. Dre beats in white with bluetooth capabilities",
+        id: "headphonesImage",
+        imageUrl1: "headphones.jpg",
+        imageUrl2: "headphones2.jpg"
+    },
+    {
+        num: 9,
+        name: "Phone Holder",
+        price: "£150",
+        description: "iPhone 13 metallic phone holder with chargeing capabilities",
+        id: "holderImage",
+        imageUrl1: "holder.jpg",
+        imageUrl2: "holder2.jpg"
+    },
+    {
+        num: 10,
+        name: "LG Monitor",
+        price: "£500",
+        description: "26.5 inch LG monitor with 4K quality and 144Hz refresh rate",
+        id: "monitorImage",
+        imageUrl1: "monitor.jpg",
+        imageUrl2: "monitor2.jpg"
+    },
 ];
