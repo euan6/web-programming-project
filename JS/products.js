@@ -106,4 +106,11 @@ window.addEventListener("load", function() {
     function() { changeImage('../Images/holder.jpg', "holderImage") }, 
     "Phone Holder", "£12", 
     "iPhone 13 metallic phone holder with chargeing capabilities");
+
+    // adds monitor product
+    productDiv("../Images/monitor.jpg", "monitorImage", 
+    function() { changeImage('../Images/monitor2.jpg', "monitorImage") } , 
+    function() { changeImage('../Images/monitor.jpg', "monitorImage") }, 
+    "LG Monitor", "£500", 
+    "26.5 inch LG monitor with 4K quality and 144Hz refresh rate");
 });
