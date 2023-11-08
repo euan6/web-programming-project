@@ -1,121 +1,5 @@
-// creates a dynamically loading div with class 'product'
-function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, description) {
-    // create the div and add class 'product'
-    var div = document.createElement("div");
-    div.classList.add("product");
-
-    // create image and add src and alt text
-    var img = document.createElement("img");
-    img.src = imageSrc;
-    img.alt = "Product Image";
-    img.id = imageId;
-    img.onmouseover = imageOver;
-    img.onmouseout = imageOut;
-
-    // create the product name, add class 'pName' and content
-    var p1 = document.createElement("h2");
-    p1.className = "pName";
-    p1.textContent = name;
-
-    // create the product price, add class 'pPrice' and content
-    var p2 = document.createElement("h3");
-    p2.className = "pPrice";
-    p2.textContent = price;
-
-    // create the product description and add content
-    var p3 = document.createElement("h4");
-    p3.className = "pDescription";
-    p3.textContent = description;
-
-    // append elements on to the div
-    div.appendChild(img);
-    div.appendChild(p1);
-    div.appendChild(p2);
-    div.appendChild(p3);
-
-    // add the div to the 'productsArea' id
-    var targetElement = document.querySelector("#productsArea");
-    if (targetElement) {
-        targetElement.appendChild(div);
-    } else {
-        alert("Target element not found");
-    }
-}
-
-// adds different product divs when the page is loaded
-window.addEventListener("load", function() {
-    // adds laptop product
-    productDiv("../Images/laptop.jpg", "laptopImage",
-    function() { changeImage('../Images/laptop2.jpg', "laptopImage") }, 
-    function() { changeImage('../Images/laptop.jpg', "laptopImage") }, 
-    "Laptop", "£799", 
-    "Lenovo Thinkpad E15 with an intel i5 core processor. 32GB RAM and a 256GB SSD");
-
-    // adds watch product
-    productDiv("../Images/watch.jpg",  "watchImage", 
-    function() { changeImage('../Images/watch2.jpg', "watchImage") },
-    function() { changeImage('../Images/watch.jpg', "watchImage") }, 
-    "Watch", "£150", 
-    "Hugo Boss stainless steel watch with smooth leather wrist strap");
-
-    // adds keyboard product
-    productDiv("../Images/keyboard.jpg", "keyboardImage", 
-    function() { changeImage('../Images/keyboard2.jpg', "keyboardImage") }, 
-    function() { changeImage('../Images/keyboard.jpg', "keyboardImage") }, 
-    "Keyboard", "£65", 
-    "Logitech RGB light up mechanical keyboard with programmable keys");
-
-    // adds smart watch product
-    productDiv("../Images/swatch.jpg", "swatchImage", 
-    function() { changeImage('../Images/swatch2.jpg', "swatchImage") } , 
-    function() { changeImage('../Images/swatch.jpg', "swatchImage") }, 
-    "Smart Watch", "£499", 
-    "New Apple smart watch with touch screen and built in face ID");
-
-    // adds mouse product
-    productDiv("../Images/mouse.jpg", "mouseImage", 
-    function() { changeImage('../Images/mouse2.jpg', "mouseImage") } , 
-    function() { changeImage('../Images/mouse.jpg', "mouseImage") }, 
-    "RGB Mouse", "£29", 
-    "Ergonomic mouse built to fit the hand with RGB light up edge");
-
-    // adds speaker product
-    productDiv("../Images/speaker.jpg", "speakerImage", 
-    function() { changeImage('../Images/speaker2.jpg',"speakerImage") } , 
-    function() { changeImage('../Images/speaker.jpg', "speakerImage") }, 
-    "Logitech Speaker", "£199", 
-    "100W Logitech speakers with bluetooth capabilities");
-
-    // adds remote product
-    productDiv("../Images/remote.jpg", "remoteImage", 
-    function() { changeImage('../Images/remote2.jpg', "remoteImage") } , 
-    function() { changeImage('../Images/remote.jpg', "remoteImage") }, 
-    "TV Remote", "£20", 
-    "Standard TV remote for any high end smart box");
-
-    // adds headphones product
-    productDiv("../Images/headphones.jpg", "headphonesImage", 
-    function() { changeImage('../Images/headphones2.jpg', "headphonesImage") } , 
-    function() { changeImage('../Images/headphones.jpg', "headphonesImage") }, 
-    "Headphones", "£139", 
-    "Dr. Dre beats in white with bluetooth capabilities");
-
-    // adds phone holder product
-    productDiv("../Images/holder.jpg", "holderImage", 
-    function() { changeImage('../Images/holder2.jpg', "holderImage") } , 
-    function() { changeImage('../Images/holder.jpg', "holderImage") }, 
-    "Phone Holder", "£12", 
-    "iPhone 13 metallic phone holder with chargeing capabilities");
-
-    // adds monitor product
-    productDiv("../Images/monitor.jpg", "monitorImage", 
-    function() { changeImage('../Images/monitor2.jpg', "monitorImage") } , 
-    function() { changeImage('../Images/monitor.jpg', "monitorImage") }, 
-    "LG Monitor", "£500", 
-    "26.5 inch LG monitor with 4K quality and 144Hz refresh rate");
-});
-
 // product data for individual products
+var idNum = 0;
 const prodcuts = [
     {
         num: 1,
@@ -208,3 +92,137 @@ const prodcuts = [
         imageUrl2: "monitor2.jpg"
     },
 ];
+
+// creates a dynamically loading div with class 'product'
+function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, description) {
+    // create the div and add class 'product'
+    var div = document.createElement("div");
+    div.classList.add("product");
+    // create product id number and add to div
+    div.id = "productId" + idNum++;
+
+    // create image and add src and alt text
+    var img = document.createElement("img");
+    img.src = imageSrc;
+    img.alt = "Product Image";
+    img.id = imageId;
+    img.onmouseover = imageOver;
+    img.onmouseout = imageOut;
+
+    // create the product name, add class 'pName' and content
+    var p1 = document.createElement("h2");
+    p1.className = "pName";
+    p1.textContent = name;
+
+    // create the product price, add class 'pPrice' and content
+    var p2 = document.createElement("h3");
+    p2.className = "pPrice";
+    p2.textContent = price;
+
+    // create the product description and add content
+    var p3 = document.createElement("h4");
+    p3.className = "pDescription";
+    p3.textContent = description;
+
+    // append elements on to the div
+    div.appendChild(img);
+    div.appendChild(p1);
+    div.appendChild(p2);
+    div.appendChild(p3);
+
+    // add the div to the 'productsArea' id
+    var targetElement = document.querySelector("#productsArea");
+    if (targetElement) {
+        targetElement.appendChild(div);
+    }
+}
+
+// adds different product divs when the page is loaded
+window.addEventListener("load", function() {
+    // adds laptop product
+    productDiv("../Images/laptop.jpg", prodcuts[0].id,
+    function() { changeImage('../Images/laptop2.jpg', prodcuts[0].id) }, 
+    function() { changeImage('../Images/laptop.jpg', prodcuts[0].id) }, 
+    "Laptop", "£799", 
+    "Lenovo Thinkpad E15 with an intel i5 core processor. 32GB RAM and a 256GB SSD");
+
+    // adds watch product
+    productDiv("../Images/watch.jpg",  prodcuts[1].id, 
+    function() { changeImage('../Images/watch2.jpg', prodcuts[1].id) },
+    function() { changeImage('../Images/watch.jpg', prodcuts[1].id) }, 
+    "Watch", "£150", 
+    "Hugo Boss stainless steel watch with smooth leather wrist strap");
+
+    // adds keyboard product
+    productDiv("../Images/keyboard.jpg", prodcuts[2].id, 
+    function() { changeImage('../Images/keyboard2.jpg', prodcuts[2].id) }, 
+    function() { changeImage('../Images/keyboard.jpg', prodcuts[2].id) }, 
+    "Keyboard", "£65", 
+    "Logitech RGB light up mechanical keyboard with programmable keys");
+
+    // adds smart watch product
+    productDiv("../Images/swatch.jpg", prodcuts[3].id, 
+    function() { changeImage('../Images/swatch2.jpg', prodcuts[3].id) } , 
+    function() { changeImage('../Images/swatch.jpg', prodcuts[3].id) }, 
+    "Smart Watch", "£499", 
+    "New Apple smart watch with touch screen and built in face ID");
+
+    // adds mouse product
+    productDiv("../Images/mouse.jpg", prodcuts[4].id, 
+    function() { changeImage('../Images/mouse2.jpg', prodcuts[4].id) } , 
+    function() { changeImage('../Images/mouse.jpg', prodcuts[4].id) }, 
+    "RGB Mouse", "£29", 
+    "Ergonomic mouse built to fit the hand with RGB light up edge");
+
+    // adds speaker product
+    productDiv("../Images/speaker.jpg", prodcuts[5].id, 
+    function() { changeImage('../Images/speaker2.jpg', prodcuts[5].id) } , 
+    function() { changeImage('../Images/speaker.jpg', prodcuts[5].id) }, 
+    "Logitech Speaker", "£199", 
+    "100W Logitech speakers with bluetooth capabilities");
+
+    // adds remote product
+    productDiv("../Images/remote.jpg", prodcuts[6].id, 
+    function() { changeImage('../Images/remote2.jpg', prodcuts[6].id) } , 
+    function() { changeImage('../Images/remote.jpg', prodcuts[6].id) }, 
+    "TV Remote", "£20", 
+    "Standard TV remote for any high end smart box");
+
+    // adds headphones product
+    productDiv("../Images/headphones.jpg", prodcuts[7].id, 
+    function() { changeImage('../Images/headphones2.jpg', prodcuts[7].id) } , 
+    function() { changeImage('../Images/headphones.jpg', prodcuts[7].id) }, 
+    "Headphones", "£139", 
+    "Dr. Dre beats in white with bluetooth capabilities");
+
+    // adds phone holder product
+    productDiv("../Images/holder.jpg", prodcuts[8].id, 
+    function() { changeImage('../Images/holder2.jpg', prodcuts[8].id) } , 
+    function() { changeImage('../Images/holder.jpg', prodcuts[8].id) }, 
+    "Phone Holder", "£12", 
+    "iPhone 13 metallic phone holder with chargeing capabilities");
+
+    // adds monitor product
+    productDiv("../Images/monitor.jpg", prodcuts[9].id, 
+    function() { changeImage('../Images/monitor2.jpg', prodcuts[9].id) } , 
+    function() { changeImage('../Images/monitor.jpg', prodcuts[9].id) }, 
+    "LG Monitor", "£500", 
+    "26.5 inch LG monitor with 4K quality and 144Hz refresh rate");
+});
+
+// event listeners for product clicks
+document.getElementById("productId" + idNum).addEventListener("click", () => displayProduct(1));
+
+// function to display product details
+function displayProduct(productId) {
+    const product = products.find(p => p.id === productId);
+    if (product) {
+        const productDetail = document.getElementById("indvProduct");
+        productDetail.innerHTML = `
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>
+            <p>${product.price}</p>
+            <img src="${product.imageUrl1}" alt="${product.name}">
+        `;
+    }
+}
