@@ -143,71 +143,61 @@ window.addEventListener("load", function() {
     productDiv("../Images/laptop.jpg", prodcuts[0].id,
     function() { changeImage('../Images/laptop2.jpg', prodcuts[0].id) }, 
     function() { changeImage('../Images/laptop.jpg', prodcuts[0].id) }, 
-    "Laptop", "£799", 
-    "Lenovo Thinkpad E15 with an intel i5 core processor. 32GB RAM and a 256GB SSD");
+    prodcuts[0].name, prodcuts[0].price, prodcuts[0].description);
 
     // adds watch product
     productDiv("../Images/watch.jpg",  prodcuts[1].id, 
     function() { changeImage('../Images/watch2.jpg', prodcuts[1].id) },
     function() { changeImage('../Images/watch.jpg', prodcuts[1].id) }, 
-    "Watch", "£150", 
-    "Hugo Boss stainless steel watch with smooth leather wrist strap");
+    prodcuts[1].name, prodcuts[1].price, prodcuts[1].description);
 
     // adds keyboard product
     productDiv("../Images/keyboard.jpg", prodcuts[2].id, 
     function() { changeImage('../Images/keyboard2.jpg', prodcuts[2].id) }, 
     function() { changeImage('../Images/keyboard.jpg', prodcuts[2].id) }, 
-    "Keyboard", "£65", 
-    "Logitech RGB light up mechanical keyboard with programmable keys");
+    prodcuts[2].name, prodcuts[2].price, prodcuts[2].description);
 
     // adds smart watch product
     productDiv("../Images/swatch.jpg", prodcuts[3].id, 
     function() { changeImage('../Images/swatch2.jpg', prodcuts[3].id) } , 
     function() { changeImage('../Images/swatch.jpg', prodcuts[3].id) }, 
-    "Smart Watch", "£499", 
-    "New Apple smart watch with touch screen and built in face ID");
+    prodcuts[3].name, prodcuts[3].price, prodcuts[3].description);
 
     // adds mouse product
     productDiv("../Images/mouse.jpg", prodcuts[4].id, 
     function() { changeImage('../Images/mouse2.jpg', prodcuts[4].id) } , 
     function() { changeImage('../Images/mouse.jpg', prodcuts[4].id) }, 
-    "RGB Mouse", "£29", 
-    "Ergonomic mouse built to fit the hand with RGB light up edge");
+    prodcuts[4].name, prodcuts[4].price, prodcuts[4].description);
 
     // adds speaker product
     productDiv("../Images/speaker.jpg", prodcuts[5].id, 
     function() { changeImage('../Images/speaker2.jpg', prodcuts[5].id) } , 
     function() { changeImage('../Images/speaker.jpg', prodcuts[5].id) }, 
-    "Logitech Speaker", "£199", 
-    "100W Logitech speakers with bluetooth capabilities");
+    prodcuts[5].name, prodcuts[5].price, prodcuts[5].description);
 
     // adds remote product
     productDiv("../Images/remote.jpg", prodcuts[6].id, 
     function() { changeImage('../Images/remote2.jpg', prodcuts[6].id) } , 
     function() { changeImage('../Images/remote.jpg', prodcuts[6].id) }, 
-    "TV Remote", "£20", 
-    "Standard TV remote for any high end smart box");
+    prodcuts[6].name, prodcuts[6].price, prodcuts[6].description);
 
     // adds headphones product
     productDiv("../Images/headphones.jpg", prodcuts[7].id, 
     function() { changeImage('../Images/headphones2.jpg', prodcuts[7].id) } , 
     function() { changeImage('../Images/headphones.jpg', prodcuts[7].id) }, 
-    "Headphones", "£139", 
-    "Dr. Dre beats in white with bluetooth capabilities");
+    prodcuts[7].name, prodcuts[7].price, prodcuts[7].description);
 
     // adds phone holder product
     productDiv("../Images/holder.jpg", prodcuts[8].id, 
     function() { changeImage('../Images/holder2.jpg', prodcuts[8].id) } , 
     function() { changeImage('../Images/holder.jpg', prodcuts[8].id) }, 
-    "Phone Holder", "£12", 
-    "iPhone 13 metallic phone holder with chargeing capabilities");
+    prodcuts[8].name, prodcuts[8].price, prodcuts[8].description);
 
     // adds monitor product
     productDiv("../Images/monitor.jpg", prodcuts[9].id, 
     function() { changeImage('../Images/monitor2.jpg', prodcuts[9].id) } , 
     function() { changeImage('../Images/monitor.jpg', prodcuts[9].id) }, 
-    "LG Monitor", "£500", 
-    "26.5 inch LG monitor with 4K quality and 144Hz refresh rate");
+    prodcuts[9].name, prodcuts[9].price, prodcuts[9].description);
 });
 
 // event listeners for product clicks
