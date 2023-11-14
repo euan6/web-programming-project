@@ -1,5 +1,4 @@
 // product data for individual products
-var idNum = -1;
 const products = [
     {
         num: 1,
@@ -128,7 +127,7 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
     p3.textContent = description;
 
     // append elements on to the div
-    div.appendChild(a);
+    a.appendChild(div);
     div.appendChild(img);
     div.appendChild(p1);
     div.appendChild(p2);
@@ -219,8 +218,10 @@ document.addEventListener("DOMContentLoaded", function () {
     products.forEach(product => {
         const productDiv = document.getElementById(product.id);
         if (productDiv) {
-            productDiv.addEventListener("click", () => displayProduct(product));
-            console.log(product.name);
+            productDiv.addEventListener("click", () => {
+                console.log(`Product clicked: ${product.name}`);
+                displayProduct(product);
+            });
         }
     });
 });
