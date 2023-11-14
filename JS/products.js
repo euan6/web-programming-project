@@ -93,15 +93,10 @@ const products = [
 ];
 
 // creates a dynamically loading div with class 'product'
-function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, description, divId) {
+function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, description) {
     // create the div and add class 'product'
     var div = document.createElement("div");
     div.classList.add("product");
-    div.id = divId;
-
-    // create link to individual product page
-    var a = document.createElement("a");
-    a.href = "indvProduct.html";
 
     // create image and add src and alt text
     var img = document.createElement("img");
@@ -127,7 +122,6 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
     p3.textContent = description;
 
     // append elements on to the div
-    a.appendChild(div);
     div.appendChild(img);
     div.appendChild(p1);
     div.appendChild(p2);
@@ -143,98 +137,62 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
 // adds different product divs when the page is loaded
 window.addEventListener("load", function() {
     // adds laptop product
-    idNum += 1;
     productDiv("../Images/laptop.jpg", products[0].id,
     function() { changeImage('../Images/laptop2.jpg', products[0].id) }, 
     function() { changeImage('../Images/laptop.jpg', products[0].id) }, 
     products[0].name, products[0].price, products[0].description, products[0].num);
 
     // adds watch product
-    idNum += 1;
     productDiv("../Images/watch.jpg",  products[1].id, 
     function() { changeImage('../Images/watch2.jpg', products[1].id) },
     function() { changeImage('../Images/watch.jpg', products[1].id) }, 
     products[1].name, products[1].price, products[1].description, products[1].num);
 
     // adds keyboard product
-    idNum += 1;
     productDiv("../Images/keyboard.jpg", products[2].id, 
     function() { changeImage('../Images/keyboard2.jpg', products[2].id) }, 
     function() { changeImage('../Images/keyboard.jpg', products[2].id) }, 
     products[2].name, products[2].price, products[2].description, products[2].num);
 
     // adds smart watch product
-    idNum += 1;
     productDiv("../Images/swatch.jpg", products[3].id, 
     function() { changeImage('../Images/swatch2.jpg', products[3].id) } , 
     function() { changeImage('../Images/swatch.jpg', products[3].id) }, 
     products[3].name, products[3].price, products[3].description, products[3].num);
 
     // adds mouse product
-    idNum += 1;
     productDiv("../Images/mouse.jpg", products[4].id, 
     function() { changeImage('../Images/mouse2.jpg', products[4].id) } , 
     function() { changeImage('../Images/mouse.jpg', products[4].id) }, 
     products[4].name, products[4].price, products[4].description, products[4].num);
 
     // adds speaker product
-    idNum += 1;
     productDiv("../Images/speaker.jpg", products[5].id, 
     function() { changeImage('../Images/speaker2.jpg', products[5].id) } , 
     function() { changeImage('../Images/speaker.jpg', products[5].id) }, 
     products[5].name, products[5].price, products[5].description, products[5].num);
 
     // adds remote product
-    idNum += 1;
     productDiv("../Images/remote.jpg", products[6].id, 
     function() { changeImage('../Images/remote2.jpg', products[6].id) } , 
     function() { changeImage('../Images/remote.jpg', products[6].id) }, 
     products[6].name, products[6].price, products[6].description, products[6].num);
 
     // adds headphones product
-    idNum += 1;
     productDiv("../Images/headphones.jpg", products[7].id, 
     function() { changeImage('../Images/headphones2.jpg', products[7].id) } , 
     function() { changeImage('../Images/headphones.jpg', products[7].id) }, 
     products[7].name, products[7].price, products[7].description, products[7].num);
 
     // adds phone holder product
-    idNum += 1;
     productDiv("../Images/holder.jpg", products[8].id, 
     function() { changeImage('../Images/holder2.jpg', products[8].id) } , 
     function() { changeImage('../Images/holder.jpg', products[8].id) }, 
     products[8].name, products[8].price, products[8].description, products[8].num);
 
     // adds monitor product
-    idNum += 1;
     productDiv("../Images/monitor.jpg", products[9].id, 
     function() { changeImage('../Images/monitor2.jpg', products[9].id) } , 
     function() { changeImage('../Images/monitor.jpg', products[9].id) }, 
     products[9].name, products[9].price, products[9].description, products[9].num);
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    // event listener for product clicks
-    products.forEach(product => {
-        const productDiv = document.getElementById(product.id);
-        if (productDiv) {
-            productDiv.addEventListener("click", () => {
-                console.log(`Product clicked: ${product.name}`);
-                displayProduct(product);
-            });
-        }
-    });
-});
-
-// function to display product details
-function displayProduct(product) {
-    if (product) {
-        const productDetail = document.getElementById("indvProduct");
-        productDetail.innerHTML = `
-            <h2>${product.name}Hi</h2>
-            <p>${product.description}</p>
-            <p>${product.price}</p>
-            <img src="${product.imageUrl1}" alt="${product.name}">
-        `;
-    }
-}
