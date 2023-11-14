@@ -40,7 +40,7 @@ window.addEventListener("load", function() {
     historyInfo("Week 8 - Cookie Banner fixed to the bottom of website using jQuery aswell as the navbar and header merged");
 
     // adds p element for week 9
-    historyInfo("Week 9 - ");
+    historyInfo("Week 9 - Started working on a page for individual products, however it didnt work out so just small JS changes");
 
     // adds p element for week 10
     historyInfo("Week 10 - ");
