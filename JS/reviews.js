@@ -36,14 +36,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // moves the the next review
     function nextReview() {
-        currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
-        showReview(currentReviewIndex);
+        if (currentReviewIndex < reviews.length - 1) {
+            currentReviewIndex++;
+            showReview(currentReviewIndex);
+        }
     }
 
     // moves to the previous review
     function prevReview() {
-        currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
-        showReview(currentReviewIndex);
+        if (currentReviewIndex > 0) {
+            currentReviewIndex--;
+            showReview(currentReviewIndex);
+        }
     }
 
     // display the first review initially
