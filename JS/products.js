@@ -103,6 +103,7 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
     img.src = imageSrc;
     img.alt = "Product Image";
     img.id = imageId;
+    img.loading = "lazy";
     img.onmouseover = imageOver;
     img.onmouseout = imageOut;
 
