@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentReviewIndex = 0;
 
+    // displays the current review
     function showReview(index) {
         const reviewArea = document.getElementById("reviewArea");
         if (reviewArea) {
@@ -33,17 +34,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // moves the the next review
     function nextReview() {
         currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
         showReview(currentReviewIndex);
     }
 
+    // moves to the previous review
     function prevReview() {
         currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
         showReview(currentReviewIndex);
     }
 
-    // Display the first review initially
+    // display the first review initially
     showReview(currentReviewIndex);
 
     // add event listeners for next and previous buttons
