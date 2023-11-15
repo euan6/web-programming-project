@@ -43,7 +43,7 @@ window.addEventListener("load", function() {
     historyInfo("Week 9 - Started working on a page for individual products, however it didnt work out so just small JS changes");
 
     // adds p element for week 10
-    historyInfo("Week 10 - ");
+    historyInfo("Week 10 - Review Slider functionality was completed with several reviews added, and other small changes");
 
     // adds p element for week 11
     historyInfo("Week 11 - ");
