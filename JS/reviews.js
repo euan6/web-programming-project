@@ -1,10 +1,52 @@
 document.addEventListener("DOMContentLoaded", function () {
     const reviews = [
-        { imageSrc: "../Images/profile.jpg", name: "John Doe", productName: "RGB Mouse", rating: "4/5", description: "The mouse was decent, but ... and that's why." },
-        // Add more reviews as needed
+        { 
+            imageSrc: "../Images/profile.jpg", 
+            name: "John Doe -", 
+            productName: "RGB Mouse", 
+            rating: "4/5", 
+            description: "The mouse was decent, but ... and that's why." 
+        },
+        { 
+            imageSrc: "../Images/profile.jpg", 
+            name: "Ronald Mckay -", 
+            productName: "Laptop", 
+            rating: "5/5", 
+            description: "The laptop was very quick and supported everything I needed to be able to do" 
+        },
+        { 
+            imageSrc: "../Images/profile.jpg", 
+            name: "Graham Stevens -", 
+            productName: "Smart Watch", 
+            rating: "3/5", 
+            description: "The smart watch wasnt my greatest purchase, however ..." 
+        },
     ];
 
-    // Add event listeners for next and previous buttons
+    let currentReviewIndex = 0;
+
+    function showReview(index) {
+        const reviewArea = document.getElementById("reviewArea");
+        if (reviewArea) {
+            reviewArea.innerHTML = "";
+            reviewSlider(reviews[index]);
+        }
+    }
+
+    function nextReview() {
+        currentReviewIndex = (currentReviewIndex + 1) % reviews.length;
+        showReview(currentReviewIndex);
+    }
+
+    function prevReview() {
+        currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length;
+        showReview(currentReviewIndex);
+    }
+
+    // Display the first review initially
+    showReview(currentReviewIndex);
+
+    // add event listeners for next and previous buttons
     document.getElementById('next').addEventListener('click', nextReview);
     document.getElementById('previous').addEventListener('click', prevReview);
 });
