@@ -1,5 +1,15 @@
-// creates a dynamically loading div with class 'review'
-function reviewSlider(imageSrc, name, productName, rating, description) {
+document.addEventListener("DOMContentLoaded", function () {
+    const reviews = [
+        { imageSrc: "../Images/profile.jpg", name: "John Doe", productName: "RGB Mouse", rating: "4/5", description: "The mouse was decent, but ... and that's why." },
+        // Add more reviews as needed
+    ];
+
+    // Add event listeners for next and previous buttons
+    document.getElementById('next').addEventListener('click', nextReview);
+    document.getElementById('previous').addEventListener('click', prevReview);
+});
+
+function reviewSlider(review) {
     // create the div and add class 'review'
     var div = document.createElement("div");
     div.classList.add("review");
@@ -10,28 +20,28 @@ function reviewSlider(imageSrc, name, productName, rating, description) {
 
     // create image and add src and alt text
     var img = document.createElement("img");
-    img.src = imageSrc;
+    img.src = review.imageSrc;
     img.alt = "Profile Picture";
 
     // create the name, add class 'reviewName' and content
     var p1 = document.createElement("p");
     p1.className = "reviewName";
-    p1.textContent = name;
+    p1.textContent = review.name;
 
     // create the product name, add class 'productName' and content
     var p2 = document.createElement("p");
     p2.className = "productName";
-    p2.textContent = productName;
+    p2.textContent = review.productName;
 
     // create the rating, add class 'rating' and content
     var p3 = document.createElement("p");
     p3.className = "rating";
-    p3.textContent = rating;
+    p3.textContent = review.rating;
 
     // create the description, add class 'reviewText' and content
     var p4 = document.createElement("p");
     p4.className = "reviewText";
-    p4.textContent = description;
+    p4.textContent = review.description;
 
     // append elements on to the div
     divInfo.appendChild(img);
@@ -49,9 +59,3 @@ function reviewSlider(imageSrc, name, productName, rating, description) {
         alert("Target element not found");
     }
 }
-
-// adds different reviews when the page is loaded
-window.addEventListener("load", function() {
-    // adds first review
-    reviewSlider("../Images/profile.jpg", "John Doe", "RGB Mouse", "4/5", "The mouse was decent, but ... and thats why.") 
-});
