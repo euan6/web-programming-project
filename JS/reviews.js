@@ -2,22 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const reviews = [
         { 
             imageSrc: "../Images/profile.jpg", 
-            name: "John Doe -", 
-            productName: "RGB Mouse", 
+            name: "John Doe", 
+            productName: "(RGB Mouse)", 
             rating: "4/5", 
             description: "The mouse was decent, but ... and that's why." 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
-            name: "Ronald Mckay -", 
-            productName: "Laptop", 
+            name: "Ronald Mckay", 
+            productName: "(Laptop)", 
             rating: "5/5", 
             description: "The laptop was very quick and supported everything I needed to be able to do" 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
-            name: "Graham Stevens -", 
-            productName: "Smart Watch", 
+            name: "Graham Stevens", 
+            productName: "(Smart Watch)", 
             rating: "3/5", 
             description: "The smart watch wasnt my greatest purchase, however ..." 
         },
