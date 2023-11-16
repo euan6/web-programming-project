@@ -410,6 +410,16 @@ footer ul {
     cursor: pointer;
 }
 
+.socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialLinks li {
+    padding: 0 10px;
+}
+
 .in:hover {
     color: #ae0eee;
 }
