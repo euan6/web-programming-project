@@ -368,7 +368,7 @@ footer {
 footer h2 {
     font-size: 22px;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 footer ul {
@@ -400,7 +400,7 @@ footer ul {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .column3 {
@@ -408,7 +408,6 @@ footer ul {
 }
 
 .column3 ul li:hover {
-    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -420,6 +419,11 @@ footer ul {
 
 .socialLinks li {
     padding: 0 10px;
+}
+
+.in, .tw, .yt, .fb, .sc {
+    display: flex;
+    flex-direction: column;
 }
 
 .in:hover {
