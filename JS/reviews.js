@@ -67,10 +67,11 @@ function reviewSlider(review) {
     var divInfo = document.createElement("div");
     divInfo.classList.add("reviewInfo");
 
-    // create image and add src and alt text
-    var img = document.createElement("img");
-    img.src = review.imageSrc;
-    img.alt = "Profile Picture";
+    // create profile picture icon
+    var i = document.createElement("i");
+    i.classList.add("fa-regular");
+    i.classList.add("fa-circle-user");
+    i.style.color = "#000";
 
     // create the name, add class 'reviewName' and content
     var p1 = document.createElement("p");
@@ -93,7 +94,7 @@ function reviewSlider(review) {
     p4.textContent = review.description;
 
     // append elements on to the div
-    divInfo.appendChild(img);
+    divInfo.appendChild(i);
     divInfo.appendChild(p1);
     divInfo.appendChild(p2);
     div.appendChild(divInfo);

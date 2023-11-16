@@ -292,10 +292,8 @@ input[type="submit"]:hover {
 }
 
 #reviewSlider button {
-    background-color: #dfdfdf;
     cursor: pointer;
     width: 20%;
-    border: 0.5px #000 solid;
     border-radius: 50%;
     padding: 10px;
     margin: 0 25px;
@@ -304,7 +302,7 @@ input[type="submit"]:hover {
 }
 
 #reviewSlider button:hover {
-    background-color: #a1a0a0;
+    background-color: #b4b4b4;
 }
 
 #reviewSlider p {
@@ -336,10 +334,10 @@ input[type="submit"]:hover {
     display: flex;
 }
 
-.reviewInfo img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.reviewInfo i {
+    font-size: 45px;
+    margin-top: 5px;
+    margin-left: 5px;
     padding-right: 10px;
 }
 
