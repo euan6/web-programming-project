@@ -336,18 +336,12 @@ input[type="submit"]:hover {
 
 .reviewInfo i {
     font-size: 45px;
-    margin-top: 5px;
-    margin-left: 5px;
+    margin: 5px 0;
     padding-right: 10px;
 }
 
-.rating {
-    padding-left: 10px;
-    color: #24f324;
-}
-
-.reviewText {
-    padding-left: 10px;
+.reviewStars {
+    font-size: 20px;
 }
 
 /* Footer Properties */
