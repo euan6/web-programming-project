@@ -127,6 +127,10 @@
     .column3 ul li p {
         display: none;
     }
+
+    .socialLinks {
+        font-size: 1.1rem;
+    }
 }
 
 /* Media query for less than 750px */
@@ -187,6 +191,14 @@
     .appLogo img {
         height: 30px;
         width: 65px;
+    }
+
+    .column3 ul li p {
+        display: none;
+    }
+
+    .socialLinks {
+        font-size: 15px;
     }
 
     #cookieBanner {
