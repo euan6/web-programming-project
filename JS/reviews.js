@@ -4,21 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
             imageSrc: "../Images/profile.jpg", 
             name: "John Doe", 
             productName: "(RGB Mouse)", 
-            rating: "4/5", 
+            rating: 4, 
             description: "The mouse was decent, but ... and that's why." 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
             name: "Ronald Mckay", 
             productName: "(Laptop)", 
-            rating: "5/5", 
+            rating: 5, 
             description: "The laptop was very quick and supported everything I needed to be able to do" 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
             name: "Graham Stevens", 
             productName: "(Smart Watch)", 
-            rating: "3/5", 
+            rating: 3, 
             description: "The smart watch wasnt my greatest purchase, however ..." 
         },
     ];
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function reviewSlider(review) {
-    // create the div and add class 'review'
+    // create div and add class 'review'
     var div = document.createElement("div");
     div.classList.add("review");
 
@@ -83,10 +83,25 @@ function reviewSlider(review) {
     p2.className = "productName";
     p2.textContent = review.productName;
 
-    // create the rating, add class 'rating' and content
-    var p3 = document.createElement("p");
-    p3.className = "rating";
-    p3.textContent = review.rating;
+    // create div for stars
+    var starsDiv = document.createElement("div");
+    div.classList.add("reviewStars");
+    // loop for how many stars
+    for (let x = 0; x < review.rating; x++) {
+        var star = document.createElement("i");
+        star.classList.add("fa-solid");
+        star.classList.add("fa-star");
+        star.style.color = "#000";
+        starsDiv.appendChild(star);
+    }
+    // loop for how many empty stars
+    for (let y = 0; y < 5 - review.rating; y++) {
+        var emptyStar = document.createElement("i");
+        emptyStar.classList.add("fa-regular");
+        emptyStar.classList.add("fa-star");
+        emptyStar.style.color = "#000";
+        starsDiv.appendChild(emptyStar);
+    }
 
     // create the description, add class 'reviewText' and content
     var p4 = document.createElement("p");
@@ -98,7 +113,7 @@ function reviewSlider(review) {
     divInfo.appendChild(p1);
     divInfo.appendChild(p2);
     div.appendChild(divInfo);
-    div.appendChild(p3);
+    div.appendChild(starsDiv);
     div.appendChild(p4);
 
     // add the div to the 'reviewSlider' id
