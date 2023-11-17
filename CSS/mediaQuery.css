@@ -123,6 +123,10 @@
         height: 30px;
         width: 80px;
     }
+
+    .column3 ul li p {
+        display: none;
+    }
 }
 
 /* Media query for less than 750px */
@@ -130,7 +134,7 @@
     
     /* Header Properties */
     h1 {
-        font-size: 26px;
+        font-size: 14px;
     }
 
     /* Nav Bar Properties */
@@ -182,6 +186,14 @@
 
     .appLogo img {
         height: 30px;
-        width: 80px;
+        width: 65px;
+    }
+
+    #cookieBanner {
+        height: 10px;
+    }
+
+    #cookieBanner p {
+        font-size: 12px;
     }
 }

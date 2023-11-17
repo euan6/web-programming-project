@@ -399,6 +399,12 @@ footer ul {
     flex-basis: 40%;
 }
 
+.column3 ul li p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
 .column3 ul li:hover {
     cursor: pointer;
 }
@@ -418,23 +424,23 @@ footer ul {
     flex-direction: column;
 }
 
-.in:hover {
+.in p:hover {
     color: #ae0eee;
 }
 
-.tw:hover {
+.tw p:hover {
     color: #1da1f2;
 }
 
-.yt:hover {
+.yt p:hover {
     color: #ff0000;
 }
 
-.fb:hover {
+.fb p:hover {
     color: #003db8;
 }
 
-.sc:hover {
+.sc p:hover {
     color: #e9e506;
 }
 
