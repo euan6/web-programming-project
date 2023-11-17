@@ -91,7 +91,7 @@ function reviewSlider(review) {
         var star = document.createElement("i");
         star.classList.add("fa-solid");
         star.classList.add("fa-star");
-        star.style.color = "#000";
+        star.style.color = "#e9e506";
         starsDiv.appendChild(star);
     }
     // loop for how many empty stars
@@ -99,7 +99,7 @@ function reviewSlider(review) {
         var emptyStar = document.createElement("i");
         emptyStar.classList.add("fa-regular");
         emptyStar.classList.add("fa-star");
-        emptyStar.style.color = "#000";
+        emptyStar.style.color = "#e9e506";
         starsDiv.appendChild(emptyStar);
     }
 
