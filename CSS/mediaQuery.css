@@ -106,6 +106,29 @@
         font-size: 15px;
     }
 
+    /* Review Page Properties */
+    #reviewSlider {
+        padding: 20px 0;
+        overflow: hidden;
+    }
+
+    #reviewSlider .reviewName {
+        font-size: 1rem;
+    }
+
+    #reviewSlider .productName {
+        font-size: 1rem;
+    }
+    
+    .reviewInfo i{
+        font-size: 35px;
+        text-overflow: clip;
+    }
+
+    .reviewStars {
+        font-size: 18px
+    }
+
     /* Footer Properties */
     footer h2 {
         font-size: 14px;
