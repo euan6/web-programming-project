@@ -40,6 +40,18 @@
         font-size: 15px;
     }
 
+    /* Review Page Properties */
+    #reviewSlider {
+        padding: 20px 0;
+        overflow: hidden;
+    }
+
+    .reviewInfo i{
+        font-size: 40px;
+        text-overflow: clip;
+    }
+
+
     /* Footer Properties */
     footer h2 {
         font-size: 16px;
@@ -205,6 +217,29 @@
 
     .pPrice {
         font-size: 15px;
+    }
+
+    /* Review Page Properties */
+    #reviewSlider {
+        padding: 30px 0;
+        overflow: hidden;
+    }
+
+    #reviewSlider .reviewName {
+        font-size: 0.9rem;
+    }
+
+    #reviewSlider .productName {
+        font-size: 0.9rem;
+    }
+    
+    .reviewInfo i{
+        font-size: 30px;
+        text-overflow: clip;
+    }
+
+    .reviewStars {
+        font-size: 18px
     }
 
     /* Footer Properties */
