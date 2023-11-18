@@ -122,6 +122,10 @@ nav li a:hover {
     margin: auto;
 }
 
+#navIconLinks {
+    display: none;
+}
+
 /* Main Section Properties */
 main {
     padding: 10px;
