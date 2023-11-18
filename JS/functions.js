@@ -46,7 +46,7 @@ function updateDay() {
     const dayOfMonth = currentDate.getDate();
     const month = months[currentDate.getMonth()];
     const year = currentDate.getFullYear();
-    const formattedDate = `is the current UK time on ${dayOfWeek} the ${dayOfMonth}${getDaySuffix(dayOfMonth)} of ${month} ${year}`;
+    const formattedDate = `current UK time on ${dayOfWeek} the ${dayOfMonth}${getDaySuffix(dayOfMonth)} of ${month} ${year}`;
 
     const currentDayElement = document.getElementById("currentDay");
     if (currentDayElement) {

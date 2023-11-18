@@ -5,21 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "John Doe", 
             productName: "(RGB Mouse)", 
             rating: 4, 
-            description: "The mouse was decent, but ... and that's why." 
+            description: "I thought I'd miss my Magic Mouse, but not at all. Erognomically, I like the feel of the mouse and the additional features are great - specifically the forward/back." 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
             name: "Ronald Mckay", 
             productName: "(Laptop)", 
             rating: 5, 
-            description: "The laptop was very quick and supported everything I needed to be able to do" 
+            description: "The laptop was very quick and supported everything I needed to be able to do. It came very fast and at a reasonable price too." 
         },
         { 
             imageSrc: "../Images/profile.jpg", 
             name: "Graham Stevens", 
             productName: "(Smart Watch)", 
             rating: 3, 
-            description: "The smart watch wasnt my greatest purchase, however ..." 
+            description: "The smart watch wasnt my greatest purchase, however it still gets the job done with whatever task i throw at it. There are better options out there though." 
         },
     ];
 

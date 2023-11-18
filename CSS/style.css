@@ -351,6 +351,7 @@ footer {
     clear: both;
     height: 100px;
     border-radius: 5px;
+    text-wrap: pretty;
     background-color: #fff;
     border: 0.5px #000 solid;
     display: flex;
