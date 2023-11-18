@@ -134,17 +134,26 @@
 }
 
 /* Media query for less than 750px */
-@media screen and (min-width:600px) and (max-width:750px) {
+@media screen and (max-width:750px) {
     
     /* Header Properties */
     h1 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     /* Nav Bar Properties */
     nav li a {
         width: 45px;
         font-size: 11px;
+        padding: 2px 3px;
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    #navIconLinks {
+        display: block;
     }
 
     /* Main Section Properties */
