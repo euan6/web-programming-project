@@ -247,6 +247,13 @@ input[type="submit"]:hover {
     background-color: #b9b9b9;
 }
 
+.g-recaptcha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
 /* About Page Properties */
 #history {
     padding: 10px;
