@@ -7,8 +7,8 @@
 html {
     min-height: 100%;
     background: linear-gradient( 135deg,
-        #2c3e50,
-        #9c9c9c
+        #323232,
+        #9b9b9b
     );
 }
 
@@ -105,7 +105,7 @@ nav li a {
     width: 90px;
 }
 
-nav li a:hover {
+nav li a:hover, .active {
     font-weight: bold;
 }
 
@@ -235,7 +235,7 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: #11c6fd;
+    background-color: #9b9b9b;
     cursor: pointer;
     width: 20%;
     border: 0.5px #000 solid;
@@ -244,7 +244,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #87f7ff;
+    background-color: #b9b9b9;
 }
 
 /* About Page Properties */
