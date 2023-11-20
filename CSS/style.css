@@ -232,10 +232,11 @@ input[type="text"], input[type="password"] {
     border: 0.5px #000 solid;
     border-radius: 5px;
     text-align: center;
+    background-color: #f6f6f6;
 }
 
 input[type="submit"] {
-    background-color: #9b9b9b;
+    background-color: #f6f6f6;
     cursor: pointer;
     width: 20%;
     border: 0.5px #000 solid;
@@ -244,7 +245,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #b9b9b9;
+    background-color: #d8d8d8;
 }
 
 .g-recaptcha {
