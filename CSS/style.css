@@ -176,7 +176,7 @@ main {
     background-color: #fff;
     padding: 10px;
     border-radius: 5px;
-    border: 1px #b6b6b6 solid;
+    border: 1px #9b9b9b solid;
     min-width: 250px;
     height: 300px;
     overflow: hidden;
@@ -184,7 +184,7 @@ main {
 }
 
 .product:hover {
-    border: 1px #009dff solid;
+    border: 1px #000 solid;
 }
 
 .product img {
