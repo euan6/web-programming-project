@@ -276,6 +276,27 @@
 
 /* media query for less than 400px */
 @media screen and (max-width: 400px) {
+    /* Header Properties */
+    h1 {
+        font-size: 14px;
+    }
+
+    #banner {
+        flex-basis: 40%; 
+    }
+
+    /* Nav Bar Properties */
+    nav {
+        flex-basis: 60%;
+    }
+
+    nav li a {
+        width: 45px;
+        font-size: 9px;
+        padding: 2px 0;
+        margin: 0 -5px;
+    }
+
     /* Footer Properties */
     footer h2 {
         font-size: 10px;
