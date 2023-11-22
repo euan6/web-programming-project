@@ -1,4 +1,4 @@
-/* Media query for less than 1200px */
+/* Media query for less than 1200px and greater than 900px */
 @media screen and (min-width:900px) and (max-width:1200px) {
     /* Header Properties */
     h1 {
@@ -74,7 +74,7 @@
     }
 }
 
-/* Media query for less than 900px */
+/* Media query for less than 900px and greater than 750px */
 @media screen and (min-width:750px) and (max-width:900px) {
     /* Header Properties */
     h1 {
@@ -274,7 +274,7 @@
     }
 }
 
-/* media query for less than 400px */
+/* media query for less than 450px */
 @media screen and (max-width: 450px) {
     /* Header Properties */
     h1 {
