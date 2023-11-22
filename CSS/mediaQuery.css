@@ -316,9 +316,6 @@
     }
 
     /* Form Properties */
-    .g-recaptcha {
-    }
-
     input[type="text"], input[type="password"] {
         width: 70%;
     }
