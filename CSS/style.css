@@ -27,7 +27,7 @@ html::-webkit-scrollbar-track {
 body {
     color: #2c2c2c;
     margin: auto;
-    width: 80%;
+    width: 85%;
 }
 
 /* Text Properties */
@@ -241,6 +241,7 @@ input[type="submit"] {
     width: 20%;
     border: 0.5px #000 solid;
     border-radius: 5px;
+    text-align: center;
     padding: 10px;
 }
 

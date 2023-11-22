@@ -315,6 +315,18 @@
         width: 120px;
     }
 
+    /* Form Properties */
+    .g-recaptcha {
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 70%;
+    }
+
+    input[type="submit"] {
+        width: 30%;
+    }
+
     /* Footer Properties */
     footer h2 {
         font-size: 10px;
