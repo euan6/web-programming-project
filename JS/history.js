@@ -46,7 +46,7 @@ window.addEventListener("load", function() {
     historyInfo("Week 10 - Review Slider functionality was completed with several reviews added, and other small changes");
 
     // adds p element for week 11
-    historyInfo("Week 11 - ");
+    historyInfo("Week 11 - Recaptcha was added for the forms, github pages was published and more media query changes");
 
     // adds p element for week 12
     historyInfo("Week 12 - ");
