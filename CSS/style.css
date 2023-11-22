@@ -236,6 +236,7 @@ input[type="text"], input[type="password"] {
 }
 
 input[type="submit"] {
+    color: #000;
     background-color: #f6f6f6;
     cursor: pointer;
     width: 20%;
