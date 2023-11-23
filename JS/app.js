@@ -1,3 +1,4 @@
+// import express module and open a port
 const express = require('express');
 const app = express();
 const port = null; 
@@ -5,6 +6,7 @@ const port = null;
 const db = require('./db');
 
 app.get('/', (req, res) => {
+  // perform database query and send results to the client
   db.query('SELECT * FROM your_table', (err, results) => {
     if (err) {
       console.error('Error querying the database: ' + err.stack);
@@ -15,6 +17,7 @@ app.get('/', (req, res) => {
   });
 });
 
+// outputs what port the server is running on
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
