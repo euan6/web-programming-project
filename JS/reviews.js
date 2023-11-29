@@ -1,21 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
     const reviews = [
         { 
-            imageSrc: "../Images/profile.jpg", 
             name: "John Doe", 
             productName: "RGB Mouse", 
             rating: 4, 
             description: "I thought I'd miss my Magic Mouse, but not at all. I like the feel of the mouse and the additional features are great." 
         },
         { 
-            imageSrc: "../Images/profile.jpg", 
             name: "Ronald Mckay", 
             productName: "Laptop", 
             rating: 5, 
             description: "The laptop was very quick and supported everything I needed to be able to do. It came very fast and at a reasonable price too." 
         },
         { 
-            imageSrc: "../Images/profile.jpg", 
             name: "Graham Rae", 
             productName: "Smart Watch", 
             rating: 3, 
