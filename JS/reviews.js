@@ -16,7 +16,13 @@ document.addEventListener("DOMContentLoaded", function () {
             name: "Graham Rae", 
             productName: "Smart Watch", 
             rating: 3, 
-            description: "The smart watch wasnt my greatest purchase, however it still gets the job done with whatever task i throw at it." 
+            description: "The smart watch wasnt my greatest purchase, however it still gets the job done with whatever task I throw at it." 
+        },
+        { 
+            name: "Liam Frank", 
+            productName: "TV remote", 
+            rating: 1, 
+            description: "Buying the TV Remote was the worst idea ever. It doesnt even connect to my TV so now I need to return it somehow!" 
         },
     ];
 
