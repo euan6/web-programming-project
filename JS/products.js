@@ -99,6 +99,15 @@ const products = [
         imageUrl1: "xboxcon.jpg",
         imageUrl2: "xboxcon2.jpg"
     },
+    {
+        num: 12,
+        name: "PlayStation 5 Controller",
+        price: "£70",
+        description: "White controller for the brand new PS5",
+        id: "psconImage",
+        imageUrl1: "pscon.jpg",
+        imageUrl2: "pscon2.jpg"
+    },
 ];
 
 // creates a dynamically loading div with class 'product'
@@ -206,9 +215,15 @@ window.addEventListener("load", function() {
     function() { changeImage('Images/monitor.jpg', products[9].id) }, 
     products[9].name, products[9].price, products[9].description, products[9].num);
 
-    // adds monitor product
+    // adds xbox controller product
     productDiv("Images/xboxcon.jpg", products[10].id, 
     function() { changeImage('Images/xboxcon2.jpg', products[10].id) } , 
     function() { changeImage('Images/xboxcon.jpg', products[10].id) }, 
     products[10].name, products[10].price, products[10].description, products[10].num);
+
+    // adds playstation controller product
+    productDiv("Images/pscon.jpg", products[11].id, 
+    function() { changeImage('Images/pscon2.jpg', products[11].id) } , 
+    function() { changeImage('Images/pscon.jpg', products[11].id) }, 
+    products[11].name, products[11].price, products[11].description, products[11].num);
 });
