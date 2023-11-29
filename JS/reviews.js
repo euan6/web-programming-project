@@ -24,6 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
             rating: 1, 
             description: "Buying the TV Remote was the worst idea ever. It doesnt even connect to my TV so now I need to return it somehow!" 
         },
+        { 
+            name: "Kyle Currie", 
+            productName: "Phone Holder", 
+            rating: 2, 
+            description: "This phone holder is not very stable and it is not even big enough for my phone. Wouldnt recommend to anyone." 
+        },
     ];
 
     let currentReviewIndex = 0;
