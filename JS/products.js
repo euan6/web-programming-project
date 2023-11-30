@@ -15,8 +15,8 @@ const products = [
         price: "£150",
         description: "Hugo Boss stainless steel watch with smooth leather wrist strap",
         id: "watchImage",
-        imageUrl1: "watch.jpg",
-        imageUrl2: "watch2.jpg"
+        imageUrl1: "Images/watch.jpg",
+        imageUrl2: "Images/watch2.jpg"
     },
     {
         num: 3,
@@ -24,8 +24,8 @@ const products = [
         price: "£65",
         description: "Logitech RGB light up mechanical keyboard with programmable keys",
         id: "keyboardImage",
-        imageUrl1: "keyboard.jpg",
-        imageUrl2: "keyboard2.jpg"
+        imageUrl1: "Images/keyboard.jpg",
+        imageUrl2: "Images/keyboard2.jpg"
     },
     {
         num: 4,
@@ -33,8 +33,8 @@ const products = [
         price: "£499",
         description: "New Apple smart watch with touch screen and built in face ID",
         id: "swatchImage",
-        imageUrl1: "swatch.jpg",
-        imageUrl2: "swatch2.jpg"
+        imageUrl1: "Images/swatch.jpg",
+        imageUrl2: "Images/swatch2.jpg"
     },
     {
         num: 5,
@@ -42,8 +42,8 @@ const products = [
         price: "£29",
         description: "Ergonomic mouse built to fit the hand with RGB light up edge",
         id: "mouseImage",
-        imageUrl1: "mouse.jpg",
-        imageUrl2: "mouse2.jpg"
+        imageUrl1: "Images/mouse.jpg",
+        imageUrl2: "Images/mouse2.jpg"
     },
     {
         num: 6,
@@ -51,8 +51,8 @@ const products = [
         price: "£199",
         description: "100W Logitech speakers with bluetooth capabilities",
         id: "speakerImage",
-        imageUrl1: "speaker.jpg",
-        imageUrl2: "speaker2.jpg"
+        imageUrl1: "Images/speaker.jpg",
+        imageUrl2: "Images/speaker2.jpg"
     },
     {
         num: 7,
@@ -60,8 +60,8 @@ const products = [
         price: "£20",
         description: "Standard TV remote for any high end smart box",
         id: "remoteImage",
-        imageUrl1: "remote.jpg",
-        imageUrl2: "remote2.jpg"
+        imageUrl1: "Images/remote.jpg",
+        imageUrl2: "Images/remote2.jpg"
     },
     {
         num: 8,
@@ -69,8 +69,8 @@ const products = [
         price: "£139",
         description: "Dr. Dre beats in white with bluetooth capabilities",
         id: "headphonesImage",
-        imageUrl1: "headphones.jpg",
-        imageUrl2: "headphones2.jpg"
+        imageUrl1: "Images/headphones.jpg",
+        imageUrl2: "Images/headphones2.jpg"
     },
     {
         num: 9,
@@ -78,8 +78,8 @@ const products = [
         price: "£150",
         description: "iPhone 13 metallic phone holder with chargeing capabilities",
         id: "holderImage",
-        imageUrl1: "holder.jpg",
-        imageUrl2: "holder2.jpg"
+        imageUrl1: "Images/holder.jpg",
+        imageUrl2: "Images/holder2.jpg"
     },
     {
         num: 10,
@@ -87,8 +87,8 @@ const products = [
         price: "£500",
         description: "26.5 inch LG monitor with 4K quality and 144Hz refresh rate",
         id: "monitorImage",
-        imageUrl1: "monitor.jpg",
-        imageUrl2: "monitor2.jpg"
+        imageUrl1: "Images/monitor.jpg",
+        imageUrl2: "Images/monitor2.jpg"
     },
     {
         num: 11,
@@ -96,8 +96,8 @@ const products = [
         price: "£50",
         description: "Full Black controller made for the Xbox 1",
         id: "xboxconImage",
-        imageUrl1: "xboxcon.jpg",
-        imageUrl2: "xboxcon2.jpg"
+        imageUrl1: "Images/xboxcon.jpg",
+        imageUrl2: "Images/xboxcon2.jpg"
     },
     {
         num: 12,
@@ -105,8 +105,8 @@ const products = [
         price: "£70",
         description: "White controller for the brand new PS5",
         id: "psconImage",
-        imageUrl1: "pscon.jpg",
-        imageUrl2: "pscon2.jpg"
+        imageUrl1: "Images/pscon.jpg",
+        imageUrl2: "Images/pscon2.jpg"
     },
 ];
 
