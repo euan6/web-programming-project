@@ -6,8 +6,8 @@ const products = [
         price: "£799",
         description: "Lenovo Thinkpad E15 with an intel i5 core processor. 32GB RAM and a 256GB SSD",
         id: "laptopImage",
-        imageUrl1: "laptop.jpg",
-        imageUrl2: "laptop2.jpg"
+        imageUrl1: "Images/laptop.jpg",
+        imageUrl2: "Images/laptop2.jpg"
     },
     {
         num: 2,
@@ -156,9 +156,9 @@ function productDiv(imageSrc, imageId, imageOver, imageOut, name, price, descrip
 // adds different product divs when the page is loaded
 window.addEventListener("load", function() {
     // adds laptop product
-    productDiv("Images/laptop.jpg", products[0].id,
-    function() { changeImage('Images/laptop2.jpg', products[0].id) }, 
-    function() { changeImage('Images/laptop.jpg', products[0].id) }, 
+    productDiv(products[0].imageUrl1, products[0].id,
+    function() { changeImage(products[0].imageUrl2, products[0].id) }, 
+    function() { changeImage(products[0].imageUrl1, products[0].id) }, 
     products[0].name, products[0].price, products[0].description, products[0].num);
 
     // adds watch product
